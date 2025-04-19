@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Available Books</h2>
+<div class="row">
+    {% for book in books %}
+    <div class="col-md-4 mb-3">
+        <div class="card p-3">
+            <h5>{{ book[1] }}</h5>
+            <p>Author: {{ book[2] }}</p>
+            <p>Price: ₹{{ book[3] }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add a New Book</h2>
+<form method="POST">
+    <input type="text" name="title" placeholder="Title" class="form-control mb-2" required>
+    <input type="text" name="author" placeholder="Author" class="form-control mb-2" required>
+    <input type="number" name="price" step="0.01" placeholder="Price" class="form-control mb-2" required>
+    <button class="btn btn-primary">Add Book</button>
+</form>
+{% endblock %}
+
